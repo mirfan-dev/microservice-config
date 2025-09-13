@@ -1,0 +1,41 @@
+server:
+  port: 7172
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/restaurantdb
+    username: user
+    password: user123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # Options: create, create-drop, validate, none, update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+
+# Actuator configuration for monitoring and management
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # Expose all actuator endpoints over HTTP
+
+  info:
+    env:
+      enabled: true  # Include environment information in actuator info endpoint
+
+
+
+
+# Application metadata for the info endpoint used by Spring Actuator
+info:
+  app:
+    name: "RESTAURANT-SERVICE"                        # Name of the restaurant service application shown in the actuator info endpoint
+    description: "This service manages restaurant"
+    version: "1.0V"                             # The version of the restaurant service application
+    environment: "prod"                           # Specifies that this is the prod environment

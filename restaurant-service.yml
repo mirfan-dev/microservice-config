@@ -1,0 +1,22 @@
+server:
+  port: 9091
+
+# Actuator configuration for monitoring and management
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # Expose all actuator endpoints over HTTP
+
+  info:
+    env:
+      enabled: true  # Include environment information in actuator info endpoint
+
+# Eureka client configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8761/eureka"
+
+
+
