@@ -22,6 +22,6 @@ spring:
 info:
   app:
     name: "FOOD-SERVICE"                        # Name of the food service application shown in the actuator info endpoint
-    description: "This service manages food items and categories"
+    description: "This service manages food items and categories.GitVersion"
     version: "1.0V"                             # The version of the food service application
     environment: "dev"                           # Specifies that this is the development environment
