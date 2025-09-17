@@ -7,6 +7,6 @@
 info:
   app:
     name: "RESTAURANT-SERVICE"                        # Name of the restaurant service application shown in the actuator info endpoint
-    description: "This service manages restaurant"
+    description: "This service is manages restaurant."
     version: "{cipher}fa1c781aca2515f6067190d7aa0ccf87bc312f2c19740ba38edc047ef2bd02ab"                             # The version of the restaurant service application
     environment: "{cipher}193cf2ab2031056e520035d8e981f1946d69e61e6860da1c1b38c97afbe948de6fae9afe04f327ff20a1af0ac1981559"                           # Specifies that this is the development environment
